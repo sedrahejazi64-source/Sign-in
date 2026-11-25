@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,black, #410651);
+    overflow: hidden;
+}
+
+.wave {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    opacity: 0.5; /* 👈 الشفافية */
+    pointer-events: none;
+}
+
+.countinar{
+  position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 700px;
+    width: 600px;
+    gap: 40px;
+    border: 7px solid  rgb(95, 6, 115);
+    border-radius: 10px;
+    color: white;
+
+    .main{
+
+        display: flex;
+        flex-direction:column ;
+        height: 350px;
+       justify-content: space-between;
+       .input_name
+       {
+        display: flex;
+        flex-direction: column;
+        gap:5px;
+       }
+       .input_email{
+         display: flex;
+        flex-direction: column;
+        gap:5px;
+       }
+       .input_password{
+         display: flex;
+        flex-direction: column;
+        gap:5px;
+       }
+       label{
+        text-align: left;
+       }
+       #fullName{
+        width: 350px;
+        height: 40px;
+        border: 2px solid black;
+        border-radius: 5px;
+       }
+       #Email{
+           width: 350px;
+        height: 40px;
+        border: 2px solid black;
+        border-radius: 5px;
+       }
+       #Password{
+           width: 350px;
+        height: 40px;
+        border: 2px solid black;
+        border-radius: 5px;
+       }
+    } 
+    .createAcoount{
+           width: 350px;
+        height: 40px;
+        border: 2px solid black;
+        border-radius: 5px;
+        color: white;
+        background-color: rgb(95, 6, 115);
+    }
+    .footer{
+        display: flex;
+       align-items: center; 
+    
+        #login{
+            color: white;
+        }
+     }
+}
